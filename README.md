@@ -1,2 +1,5 @@
 # Surfers-Co.
-Static webpage from a sample psd
+
+Single page website created from a photoshop desighn as a personal project
+
+Live website link ->
