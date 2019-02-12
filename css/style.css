@@ -1,0 +1,1027 @@
+/*CSS reset code-----------------------------------------------------------*/
+/* 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of CSS reset-----------------------------------------------------------------*/
+
+
+/*CSS for logo, menu bar and tag line area-----------------------------------------*/
+#topBackground {
+	background-image: url('../images/0-Background/Surfing.png');	/*Main background image*/
+	background-repeat: no-repeat;
+  	background-size: 100%;
+	height:488px;
+}
+
+.Wrapper {
+	width:1170px;
+	margin:0 auto;
+}
+
+#Header {
+	float:left;
+	width:1170px;
+	height:84px;
+}
+
+#logo, #menu, #socialIcons {
+	float:left;
+}
+
+#Header ul li {
+	display:inline;
+}
+
+#logo a {
+	text-decoration:none;
+	color:black;
+}
+
+#logo {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:34px;
+	margin-right:132px;
+	margin-top:22px;
+}
+
+#menu {
+	margin-top:33px;
+}
+
+#menu a {
+	text-decoration:none;
+	color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	padding:5px;
+	margin-right:25px;
+	font-weight:700;
+}
+
+#menu a:hover {
+	background:#00b0ff;
+	color:white;
+}
+
+.socialIcon {
+	width:24px;
+	height:24px;
+	margin-right:8px;
+	margin-top:30px;
+}
+
+.socialIcon:hover {
+	/*On hover over the social icons the width and height of the icons increase*/
+	width:26px;
+	height:26px;
+}
+
+#facebook {
+	margin-left:80px;
+}
+
+#tagLine {
+	float:left;
+	width:1170px;
+	height:404px;
+	text-align:center;
+	font-family: 'Playfair Display', serif;
+	font-style:italic;
+}
+
+#tagLineMain {
+	float:left;
+	width:100%;
+	margin-top: 80px;
+	color:black;
+	font-size: 50px;
+}
+
+#tagLineSubsection {
+	float:left;
+	width:100%;
+	margin-top: 18px;
+	color:white;
+	font-size: 24px;
+}
+/*End of CSS for logo, menu bar and tag line area-----------------------------------------*/
+
+/*CSS for surfboard display section-------------------------------------------------------*/
+#surfboardDisplay {
+	width:1030px;
+	height:600px;;	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-118px;
+	background-image: url('../images/2-SurfboardDisplay/background.png');
+	background-repeat: no-repeat;
+  	background-size: 100%;
+	height:600px;
+}
+
+#surfboardSections {
+	width:1030px;
+	height:600px;
+	margin-top:-118px;	/*Negative margin to push the div above its normal position and overlap it with the previous div*/
+	box-shadow:0px 0px 50px 3px #ccc;
+}
+
+#leftBackground {
+	float:left;
+	width:500px;
+	height:600px;
+	margin-top:-118px;
+	background-image: url('../images/2-SurfboardDisplay/corner.png');
+	background-repeat: no-repeat;
+  	background-size: 100%;
+	height:600px;
+}
+
+#boards {
+	float:left;
+	clear:both;
+	height:600px;
+}
+
+#boardImg {
+	margin-left:30px;
+	margin-top:32px;
+}
+
+#middleBackground {
+	float:left;
+	width:65px;
+	height:600px;
+	margin-top:-118px;
+}
+
+.thumbBoardImg {
+	cursor:pointer;
+	margin-top:3px;
+	margin-left:-45px;
+	margin-right:10px;
+}
+
+.thumbBoardImg:first-child {
+	margin-top:155px;
+}
+
+#rightBackground {
+	float:left;
+	width:465px;
+	height:600px;
+	margin-top:-118px;
+}
+
+#descriptionHeader {
+	margin-top:45px;
+	float:left;
+	width:340px;
+	height:60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:20px;
+}
+
+#desHeaderLine1, #desHeaderLine2 {
+	margin-top:10px;
+}
+
+#moveButtons {
+	float:left;
+	width:125px;
+	margin-top:65px;
+	margin-left:38px;
+	margin-right:-40px;
+}
+
+#leftButton, #rightButton {
+	float:right;
+	width:37px;
+	height:37px;
+	background-color:#ffe400;
+	border:none;
+	/*The hover function is not working as the divs are collapsed onto one another.*/
+	/*Need to make use of the z-index for providing the clicking effect on the buttons.*/
+}
+
+.arrow {
+	margin-top:-3px;
+	font-size:30px;
+	color:white;
+}
+
+.checked {
+  	color: #ffe400;
+}
+
+.unchecked {
+	color: #f0f0f7;
+}
+
+#rating {
+	float:left;
+	width:400px;
+	margin-top:20px;
+}
+
+#boardNumber {
+	float:left;
+	width:45px;
+	height:30px;
+	margin-top:-3px;
+	background-color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+	color:white;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:15px;
+	padding-bottom:15x;
+}
+
+#boardDetails {
+	float:left;
+	margin-top:30px;
+}
+
+#boardDetailsTab {
+	float:left;
+	width:465px;
+	border-bottom: 1px solid #d9d9d9;
+	width:400px;
+}
+
+.boardDetailsButton {
+	border:none;
+	background-color:white;
+	padding:0px;
+	padding-bottom:5px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	letter-spacing:1px;
+	color:#a0a0a0;
+	font-size:14px;
+	margin-right:30px;
+	outline:none;
+}
+
+.boardDetailsButton:hover {
+	border-bottom:2px solid #00b0ff;
+	color:black;
+}
+
+.boardDetailsText {
+	float:left;
+	width:400px;
+	height:170px;
+	margin-top:30px;
+	margin-bottom:50px;
+	font-family: 'Raleway', sans-serif;
+	line-height:22px;
+	color:#a0a0a0;
+	font-size:15px;
+}
+
+.active {
+	border-bottom:2px solid #00b0ff;
+	color:black;
+}
+
+
+#bookBoard {
+	float:left;
+	width:400px;
+	margin-top:10px;
+}
+
+#price {
+	float:left;
+	width:125px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+	margin-top:15px;
+}
+
+#buyNow {
+	float:left;
+	border:none;
+	background-color:#00b0ff;
+	padding-top:17px;
+	padding-bottom:17px;
+	padding-left:30px;
+	padding-right:30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	color:white;
+	font-size:14px;
+	outline:none;
+}
+
+#buyNow:hover {
+	background-color:#1197d3;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#viewAllBoards {
+	float:left;
+	width:400px;
+	margin-top:40px;
+}
+
+#viewAllBoardsLink {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	color:#00b0ff;
+	font-size:14px;
+}
+
+#viewAllBoardsLink:hover {
+	color:#1197d3;
+}
+/*End of CSS for surfboard display-----------------------------------------------------*/
+
+
+/*CSS for About Us section-------------------------------------------------------------*/
+#aboutUsHeading {
+	float:left;
+	width:100%;
+	height:300px;
+}
+
+#aboutUsHeadingbackground {
+	background-image: url('../images/3-AboutUs/aboutUsBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height:116px;
+	width:900px;
+	margin:0 auto;
+	margin-top:184px;
+}
+
+#surferBackground {
+	float:left;
+	width:100%;
+	height:449px;
+	margin-top:-20px;
+	background-image: url('../images/3-AboutUs/surferBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#aboutUsDesc {
+	float:left;
+	width:100%;
+	height:470px;
+	margin-top:-225px;
+}
+
+#aboutUsDescLeft {
+	float:left;
+	width:50%;	/*This means it always takes up half of the window*/
+	height:470px;
+	background-color:white;
+}
+
+#aboutUsDescRight {
+	float:left;
+	width:50%;
+	height:470px;
+}
+
+#weAreSurfers {
+	float:right;
+	width:300px;
+	margin-top:60px;
+	margin-right:100px;
+}
+
+#weAreSurfersLine1, #weAreSurfersLine2, #weAreSurfersDesc, #weAreSurfersReadMore{
+	float:left;
+	width:100%;
+}
+
+#weAreSurfersLine1P, #weAreSurfersLine2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:18px;
+}
+
+#weAreSurfersLine1P{
+	width:210px;
+	margin:0 auto;
+}
+
+#weAreSurfersLine2P{
+	width:14px;
+	margin:20px auto 0 auto;
+}
+
+#weAreSurfersDescP {
+	font-family: 'Playfair Display', serif;
+	margin:36px auto;
+	font-size:18px;
+	line-height:30px;
+}
+
+#weAreSurfersReadMore {
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:16px;
+}
+
+#weAreSurfersReadMore a {
+	color:#00b0ff;
+}
+
+#weAreSurfersReadMore a:hover {
+	color:#1197d3;
+}
+
+#surferVideo {
+	float:left;
+	width:450px;
+	height:300px;
+	margin-left:50px;
+	margin-top:170px;
+}
+/*End of CSS for About Us section-------------------------------------------------------------*/
+
+/*CSS for Our team section-------------------------------------------------------*/
+#ourTeamHeading {
+	float:left;
+	width:100%;
+	height:300px;
+}
+
+#ourTeamHeadingBackground {
+	background-image: url('../images/4-OurTeam/ourTeamBackground.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height:116px;
+	width:900px;
+	margin:0 auto;
+	margin-top:180px;
+}
+
+#ourTeamDetails {
+	width:100%;
+	height:285px;
+	float:left;
+	margin-top: -25px;
+}
+
+#ourTeamDetailsLeftArrow, #ourTeamDetailsRightArrow {
+	float:left;
+	width:78px;
+}
+
+#ourTeamDetailsNames {
+	float:left;
+	width:1014px;
+	height:285px;
+}
+
+.teamNames {
+	float:left;
+	width:250px;
+	height:284px;
+	background:white;
+	border-radius: 5px;
+}
+
+.teamNames:hover {
+	background:#00b0ff;
+	cursor:pointer;
+	margin-top:-20px;
+}
+
+.teamNames:hover #profileName2, .teamNames:hover #instaHandle2, .teamNames:hover #location2{
+	color:white;
+}
+
+.teamNames:hover #profileName3, .teamNames:hover #instaHandle3, .teamNames:hover #location3{
+	color:white;
+}
+
+.hidden {
+	display:none;
+}
+
+#profileImg2 {
+	float:left;
+	width:auto;
+	height:auto;
+	margin-left:75px;
+	margin-right:75px;
+	margin-top:30px;
+}
+
+#profileName2 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:18px;
+	color:#00b0ff;
+	margin-left:73.5px;
+	margin-right:73.5px;
+	margin-top:20px;
+}
+
+#instaHandle2 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	color:#7b7676;
+	margin-left:90px;
+	margin-right:90px;
+	margin-top:6px;
+}
+
+#wagesImg2 {
+	float:left;
+	margin-left:110px;
+	margin-right:110px;
+	margin-top:16px;
+}
+
+#locationDiv2 {
+	float:left;
+	width:153px;
+	margin:18px 48.5px;
+}
+
+#locationIcon2 {
+	float:left;
+	margin-right:8px;
+}
+
+#location2 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	color:#7b7676;
+}
+
+#profileImg3 {
+	float:left;
+	width:auto;
+	height:auto;
+	margin-left:75px;
+	margin-right:75px;
+	margin-top:30px;
+}
+
+#profileName3 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:18px;
+	color:#00b0ff;
+	margin-left:62px;
+	margin-right:62px;
+	margin-top:20px;
+}
+
+#instaHandle3 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	color:#7b7676;
+	margin-left:71px;
+	margin-right:71px;
+	margin-top:6px;
+}
+
+#wagesImg3 {
+	float:left;
+	margin-left:110px;
+	margin-right:110px;
+	margin-top:16px;
+}
+
+#locationDiv3 {
+	float:left;
+	width:90px;
+	margin:18px 80px;
+}
+
+#locationIcon3 {
+	float:left;
+	margin-right:8px;
+}
+
+#location3 {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	color:#7b7676;
+}
+
+#detailsLeftArrow {
+	float:left;
+}
+
+#detailsRightArrow {
+	float:right;
+}
+
+#detailsLeftArrow, #detailsRightArrow {
+	background-color: white;
+  	border: none;
+  	color: #0022ff;
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	margin-top:125px;
+	box-shadow:0px 0px 50px 3px #f3f3f3;
+	outline:none;
+	border:1px solid #eaeaea;
+}
+
+#lArrow {
+	width:50px;
+	height:50px;
+	margin-top:-20px;
+	margin-left:-8px;
+	font-size:50px;
+}
+
+#rArrow {
+	width:50px;
+	height:50px;
+	margin-top:-20px;
+	margin-left:-3px;
+	font-size:50px;
+}
+/*End of CSS for Our team section-------------------------------------------------------*/
+
+/*CSS for Update section-------------------------------------------------------*/
+#updates {
+	float:left;
+	width:100%;
+	height:565px;
+	margin-top:175px;
+}
+
+#updateHeading {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:22px;
+	width:202px;
+	margin-left:484px;
+	margin-right:484px;
+}
+
+#updateHeadingCross {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size:22px;
+	width:16px;
+	margin-left:577px;
+	margin-right:577px;
+	margin-top:16px;
+}
+
+#updateBlock1, #updateBlock2, #updateBlock3 {
+	float:left;
+	width:270px;
+	height:370px;
+	margin-left:30px;
+	margin-top:45px;
+}
+
+#updateBlock1 {
+	margin-left:140px;
+}
+
+#postImage1 {
+	background: url('../images/5-Updates/post1.png');
+	background-repeat: no-repeat;
+	height:200px;
+	width:270px
+}
+
+#postImage2 {
+	background: url('../images/5-Updates/post2.png');
+	background-repeat: no-repeat;
+	height:200px;
+	width:270px
+}
+
+
+#postImage3 {
+	background: url('../images/5-Updates/post3.png');
+	background-repeat: no-repeat;
+	height:200px;
+	width:270px
+}
+
+.postText {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:1px;
+	line-height:22px;
+	font-size:16px;
+	padding:20px;
+}
+
+#updateBlock1:hover, #updateBlock2:hover, #updateBlock3:hover {
+	box-shadow:0px 0px 50px 3px #ccc;
+	cursor:pointer;
+	color:#0101ff;
+}
+
+#viewPosts {
+	float:left;
+	border:none;
+	background-color:#00b0ff;
+	padding-top:17px;
+	padding-bottom:17px;
+	padding-left:30px;
+	padding-right:30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	color:white;
+	font-size:14px;
+	outline:none;
+	margin-left:490px;
+	margin-right:490px;
+	margin-top:40px;
+}
+
+#viewPosts:hover {
+	background-color:#1197d3;
+}
+/*End of CSS for Update section-------------------------------------------------------*/
+
+/*CSS for Social media links-------------------------------------------------------*/
+#socialMediLinks {
+	float:left;
+	width:100%;
+	height:755px;
+	margin-top:170px;
+	margin-bottom:-225px;
+	position: relative;
+	z-index:0;	/*Z-index is used to position this div above the footer div after they have overlaped*/
+}
+
+#instagramArea {
+	float:left;
+	width:50%;
+	height:755px;
+}
+
+#instagramAreaFloating {
+	float:right;
+	width:630px;
+}
+
+#instagramHeading {
+	background: url('../images/6-SocialMedia/instagramHeading.png');
+	background-repeat: no-repeat;
+	width:626px;
+	height:66px;
+	float:right;
+}
+
+#instagramImages {
+	float:left;
+	margin-right:5px;
+}
+
+.instaImages {
+	float:right;
+}
+
+.instaImages:hover {
+	cursor:pointer;
+}
+
+#folloUsBar {
+	width:626px;
+	height:70px;
+	float:right;
+	background:white;
+}
+
+#instaLogo {
+	float:left;
+	padding:20px;
+}
+
+#instaLogo:hover, #followUsText:hover {
+	cursor:pointer;
+}
+
+#followUsText {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	color:#00b0ff;
+	font-size:24px;
+	margin-top:23px;
+}
+
+#instaHandle {
+	float:left;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	margin-top:26px;
+	margin-left:30px;
+}
+
+#facebookArea {
+	float:right;
+	width:50%;
+	height:755px;
+}
+
+#facebookImage {
+	float:left;
+	background: url('../images/6-SocialMedia/facebookBackground.png');
+	background-repeat: no-repeat;
+	width:440px;
+	height:350px;
+	margin-left:50px;
+	margin-top:107px;
+}
+
+#facebookImage:hover {
+	cursor:pointer;
+}
+/*End of CSS for Social media links-------------------------------------------------------*/
+
+/*CSS for Footer area---------------------------------------------------------------------*/
+#footerArea {
+	float:left;
+	width:100%;
+	height:420px;
+	background:black;
+	position: relative;
+	z-index:-1;	/*Z-index is used to position the overlaping sections one above another*/
+}
+
+#copyrightArea {
+	float:left;
+	width:50%;
+	height:420px;
+	color:#4d4d4d;
+}
+
+#copyrightAreaText {
+	float:right;
+	width:626px;
+}
+
+#copyrightText {
+	float:left;;
+	margin-top:260px;
+	font-family: 'Raleway', sans-serif;
+	font-weight:bold;
+	letter-spacing:1px;
+	font-size:18px;
+}
+
+#footerLinks {
+	float:right;
+	width:50%;
+	height:420px;
+}
+
+#footerLinksContainer {
+	float:left;
+	width:600px;
+	height:340px;
+	margin-left:50px;
+	margin-top:45px;
+}
+
+.links {
+	float:left;
+	width:260px;
+	heith:16px;
+	margin-top:10px;
+}
+
+.footerWaves {
+	float:left;
+  	width:20px;
+	height:16px;
+	padding-right:15px;
+}
+
+.linkText {
+	float:left;
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	letter-spacing:1px;
+	line-height:22px;
+	font-size:16px;
+}
+
+#newsletter {
+	float:left;
+	width:600px;
+	height:60px;
+	padding-top:130px;
+}
+
+#subscribeText {
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+	font-size:16px;
+	width:600px;
+	margin-bottom:20px;
+}
+
+#mailIcon {
+	float:left;
+	width:18px;
+	height:14px;
+	margin-top:3px;
+}
+
+#eMail {
+	float:left;
+	width:300px;
+	margin-left:10px;
+	margin-right:5px;
+	border:none;
+	border-bottom:1px solid #4d4d4d;
+	font-family: 'Raleway', sans-serif;
+	color:#4d4d4d;
+	font-size:16px;
+	background-color:black;
+	outline:none;
+}
+
+#submitButton {
+  	border:none;
+	width:25px;
+	height:25px;
+	outline:none;
+	background:url(../images/7-Footer/arrow.png) no-repeat;
+}
+/*End of CSS for Footer area-----------------------------------------------------------*/

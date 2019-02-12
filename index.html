@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Surfers Co.</title>
+		<link rel='stylesheet' type='text/css' href='css/style.css'/>
+        <!--Add google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i" rel="stylesheet">
+        <!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+    	<!--Main section for header and tag line-->
+    	<div id="topBackground">
+			<!--Wrapper to center the page area horizontally-->
+            <div class="Wrapper">
+            	<!--Header for logo, menu and social links-->
+                <div id="Header">
+                    <p id="logo"><a href="#">Surfers Co.</a></p>
+                    <ul id="menu">
+                        <li id="board"><a href="#">BOARDS</a></li>
+                        <li id="accessories"><a href="#">ACCESSORIES</a></li>
+                        <li id="blog"><a href="#">BLOG</a></li>
+                        <li id="technology"><a href="#">TECHNOLOGY</a></li>
+                        <li id="team"><a href="#">TEAM</a></li>
+                        <li id="dealers"><a href="#">DEALERS</a></li>
+                    </ul>
+                    <ul id="socialIcons">
+                        <li id="facebook"><a href="#"><img src="images/1-Header/facebookLogo.png" alt="facebook" class="socialIcon"/></a></li>
+                        <li id="instagram"><a href="#"><img src="images/1-Header/instagramLogo.png" alt="instagram" class="socialIcon"/></a></li>
+                        <li id="twitter"><a href="#"><img src="images/1-Header/twitterLogo.png" alt="twitter" class="socialIcon"/></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--Section for tag line-->
+            <div class="Wrapper">
+                <div id="tagLine">
+                    <p id="tagLineMain">Ride every wave as if it's your last</p>
+                    <p id="tagLineSubsection">We love the motion of the ocean</p>
+                </div>
+            </div>
+		</div>
+        
+        <!--Section for surfboard display-->
+    	<div id="surfboardDisplay">
+           	<div class="Wrapper">
+                <div id="surfboardSections">
+                	<div id="leftBackground">
+                    	<div id="boards">
+                        	<img src="images/2-SurfboardDisplay/boards.png" alt="boards" id="boardImg"/>
+                        </div>
+                    </div>
+                    <div id="middleBackground">
+                    	<img src="images/2-SurfboardDisplay/surf1.png" alt="boards" class="thumbBoardImg"/>
+                        <img src="images/2-SurfboardDisplay/surf2.png" alt="boards" class="thumbBoardImg"/>
+                        <img src="images/2-SurfboardDisplay/surf3.png" alt="boards" class="thumbBoardImg"/>
+                        <img src="images/2-SurfboardDisplay/surf4.png" alt="boards" class="thumbBoardImg"/>
+                    </div>
+                    <div id="rightBackground">
+                    	<div id="descriptionHeader">
+                        	<p id="desHeaderLine1">JR Surfboards The Donny Stoker</p>
+                            <p id="desHeaderLine2">Yellow/Green Rail Fade</p>
+                        </div>
+                        <div id="moveButtons">
+                        	<button id="leftButton"><p class="arrow">&rtrif;</p></button>
+                            <button id="rightButton"><p class="arrow">&ltrif;</p></button>
+                        </div>
+                        <div id="rating">
+                        	<!--Rating stars-->
+                        	<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star unchecked"></span>
+							<span class="fa fa-star unchecked"></span>
+                        </div>
+                        <div id="boardNumber">05/25</div>
+                        <!--Multiple tabs used to show the different details for the board-->
+                        <!--Javascript is used to hide and show the different details as per the tab button that we click on-->
+                        <div id="boardDetails">
+                        	<div id="boardDetailsTab">
+                            	<button class="boardDetailsButton active" id="btnDescription" onclick="openBoardDetailsText('description','btnDescription')">DESCRIPITON</button>
+                            	<button class="boardDetailsButton" id="btnFeatures" onclick="openBoardDetailsText('features','btnFeatures')">FEATURES</button>
+                              	<button class="boardDetailsButton" id="btnDimensions" onclick="openBoardDetailsText('dimensions','btnDimensions')">DIMENSIONS</button>
+                            </div>
+                            <div id="description" class="boardDetailsText">
+                              	<p>Description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            
+                            <div id="features" class="boardDetailsText" style="display:none">
+                              	<p>Features - ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+                            </div>
+                            
+                            <div id="dimensions" class="boardDetailsText" style="display:none">
+                              	<p>Dimensions - Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div id="bookBoard">
+                        	<p id="price">$499.99</p>
+                            <button id="buyNow">BUY NOW</button>
+                        </div>
+                        <div id="viewAllBoards">
+                        	<p><a href="#" id="viewAllBoardsLink">View all boards</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Section for About Us area-->
+        <div id="aboutUsHeading">
+        	<div id="aboutUsHeadingbackground"></div>
+        </div>
+        
+        <div id="surferBackground">
+        </div>
+        
+        <div id="aboutUsDesc">
+        	<div id="aboutUsDescLeft">
+            	<div id="weAreSurfers">
+                    <div id="weAreSurfersLine1">
+                    	<p id="weAreSurfersLine1P">WE ARE SURFERS CO.</p>
+                    </div>
+                    <div id="weAreSurfersLine2">
+                    	<p id="weAreSurfersLine2P">X</p>
+                    </div>
+                    <div id="weAreSurfersDesc">
+                    	<p id="weAreSurfersDescP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div id="weAreSurfersReadMore">
+                    	<p id="weAreSurfersReadMoreP"><a href="#">Read more</a></p>
+                    </div>
+        		</div>
+        	</div>
+        	<div id="aboutUsDescRight">
+            	<div id="surferVideo">
+                	<!--Video tag to add video to the page-->
+                    <!--Contols tag gives us controls for the video-->
+                    <!--Poster tag is used to give an image as a poster for the video-->
+                	<video width="100%" height="100%" controls poster="images/3-AboutUs/surferThumnail.png">
+                    	<source src="videos/surfer.mp4" type="Video/mp4">	<!--Adding source for the video-->
+                        Your browser does not support the video tag.	<!--Default text if video tag is not supported by browser-->
+                    </video>
+                </div>
+        	</div>
+        </div>
+        
+        <!--Section for Our Team area-->
+       	<div id="ourTeamHeading">
+        	<div id="ourTeamHeadingBackground"></div>
+        </div>
+        
+        <div id="ourTeamDetails">
+        	<div class="Wrapper">
+            	<!--Button for moving left in the my team section using javascript-->
+                <div id="ourTeamDetailsLeftArrow"><button id="detailsLeftArrow" onClick="goLeft()"><p id="lArrow">&ltrif;</p></button></div>
+                    <div id="ourTeamDetailsNames">
+                    	<!--My team sections individual item-->
+                        <div class="teamNames hidden" id="ourTeamDetailsName1">
+                        	<img src="images/4-OurTeam/profilePic2.png" id="profileImg3"/>
+                        	<p id="profileName3">Malia Manuel</p>
+                            <p id="instaHandle3">@maliamanuel</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg3"/>
+                            <div id="locationDiv3">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon3"/>
+                            	<p id="location3">Wailua, Hi</p>
+                            </div>
+                        </div>
+                        <div class="teamNames show" id="ourTeamDetailsName2">
+                           	<img src="images/4-OurTeam/profilePic1.png" id="profileImg2"/>
+                        	<p id="profileName2">Taj Burrow</p>
+                            <p id="instaHandle2">@tajamos</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg2"/>
+                            <div id="locationDiv2">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon2"/>
+                            	<p id="location2">Yallingup, Australia</p>
+                            </div>
+                        </div>
+                        <div class="teamNames show" id="ourTeamDetailsName3">
+                        	<img src="images/4-OurTeam/profilePic2.png" id="profileImg3"/>
+                        	<p id="profileName3">Malia Manuel</p>
+                            <p id="instaHandle3">@maliamanuel</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg3"/>
+                            <div id="locationDiv3">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon3"/>
+                            	<p id="location3">Wailua, Hi</p>
+                            </div>
+                        </div>
+                        <div class="teamNames show" id="ourTeamDetailsName4">
+                        	<img src="images/4-OurTeam/profilePic3.png" id="profileImg2"/>
+                        	<p id="profileName2">Taj Burrow</p>
+                            <p id="instaHandle2">@tajamos</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg2"/>
+                            <div id="locationDiv2">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon2"/>
+                            	<p id="location2">Yallingup, Australia</p>
+                            </div>
+                        </div>
+                        <div class="teamNames show" id="ourTeamDetailsName5">
+                        	<img src="images/4-OurTeam/profilePic4.png" id="profileImg3"/>
+                        	<p id="profileName3">Malia Manuel</p>
+                            <p id="instaHandle3">@maliamanuel</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg3"/>
+                            <div id="locationDiv3">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon3"/>
+                            	<p id="location3">Wailua, Hi</p>
+                            </div>
+                        </div>
+                        <div class="teamNames hidden" id="ourTeamDetailsName6">
+                        	<img src="images/4-OurTeam/profilePic1.png" id="profileImg2"/>
+                        	<p id="profileName2">Taj Burrow</p>
+                            <p id="instaHandle2">@tajamos</p>
+                            <img src="images/4-OurTeam/waves.png" id="wagesImg2"/>
+                            <div id="locationDiv2">
+                            	<img src="images/4-OurTeam/locationIcon.png" id="locationIcon2"/>
+                            	<p id="location2">Yallingup, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--Button for moving right in the my team section using javascript-->
+                <div id="ourTeamDetailsRightArrow"><button id="detailsRightArrow" onClick="goRight()"><p id="rArrow">&rtrif;</p></button></div>
+        	</div> 
+        </div>
+        
+        <!--Section for Updates area-->
+        <div id="updates">
+        	<div class="Wrapper">
+            	<p id="updateHeading">LATEST UPDATES</p>
+                <p id="updateHeadingCross">X</p>
+                <div id="updateBlock1">
+                	<div id="postImage1"></div>
+                    <div id="postText1"><p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <div id="updateBlock2">
+                	<div id="postImage2"></div>
+                    <div id="postText2"><p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <div id="updateBlock3">
+                	<div id="postImage3"></div>
+                    <div id="postText3"><p class="postText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+                </div>
+                <button id="viewPosts">VIEW ALL POSTS</button>
+            </div>
+        </div>
+        
+        <!--Section for Social media links-->
+        <div id="socialMediLinks">
+        	<div id="instagramArea">
+            	<div id="instagramAreaFloating">
+                    <div id="instagramHeading"></div>
+                    <div id="instagramImages">
+                        <img src="images/6-SocialMedia/instagramImage2.png" alt="instaImages" class="instaImages"/>
+                        <img src="images/6-SocialMedia/instagramImage1.png" alt="instaImages" class="instaImages"/>
+                        <img src="images/6-SocialMedia/instagramImage4.png" alt="instaImages" class="instaImages"/>
+                        <img src="images/6-SocialMedia/instagramImage3.png" alt="instaImages" class="instaImages"/>
+                    </div>
+                    <div id="folloUsBar">
+                        <img src="images/6-SocialMedia/instagramLogo.png" alt="instaLogo" id="instaLogo"/>
+                        <p id="followUsText">FOLLOW US</p>
+                        <p id="instaHandle">@surfersco</p>
+                    </div>
+            	</div>
+            </div>
+            <div id="facebookArea">
+            	<div id="facebookImage"></div>
+            </div>
+        </div>
+        
+        <!--Section for footer area-->
+        <div id="footerArea">
+        	<div id="copyrightArea">
+            	<div id="copyrightAreaText">
+            		<p id="copyrightText">&copy; 2017 Surfers Co. &middot; Created by Sk Shayeed</p>
+                </div>
+            </div>
+            <div id="footerLinks">
+            	<div id="footerLinksContainer">
+                	<div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">About</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Technology</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Boards</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Team</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Accessories</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Dealers</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Blog</p>
+                    </div>
+                    <div class="links">
+                    	<div class="footerWaves"><img src="images/7-Footer/footerWave.png" alt="footerWave" class="footerWavesImg"/></div>
+                        <p class="linkText">Contact us</p>
+                    </div>
+                    
+                    <div id="newsletter">
+                    	<p id ="subscribeText">Subscribe to our newsletter</p>
+                        <img src="images/7-Footer/mailIcon.png" alt="mailIcon" id="mailIcon"/>
+                        <form action="#">
+                        	<input type="text" name="eMail" placeholder="Your e-mail" id="eMail">
+                            <input type="submit" id="submitButton" value="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Script is loaded at last position so that event listeners work correctly-->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
